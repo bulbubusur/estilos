@@ -6,7 +6,7 @@ body { background: #000; }
 .dismifoto::after { content: ""; position: absolute; inset: 0; background: #c8aad7; mix-blend-mode: multiply; transform: scaleX(0); transform-origin: left; transition: transform .5s ease-in-out; }
 .dismifirm:hover .dismifoto::after { transform: scaleX(1); }
 .dismifirm:hover .f2 { opacity: 1; }
-.dismitexto { position: relative; top: 85px; left: 210px; width: 120px; height: 100px; text-align: center; line-height: 10%; font: 8px sans-serif; letter-spacing: 1.3px; text-transform: uppercase; color: #d8d2c8; }
+.dismitexto { position: relative; top: 85px; left: 110px; width: 120px; height: 100px; text-align: center; line-height: 10%; font: 8px sans-serif; letter-spacing: 1.3px; text-transform: uppercase; color: #d8d2c8; }
 .dismitexto .game-icon { font-size: 35px; color: #8d7391; transition: opacity .3s, color .4s, filter .4s; }
 .dismitexto .i2 { position: absolute; top: 0; left: 50%; transform: translateX(-50%); opacity: 0; }
 .dismifirm:hover .i1 { opacity: 0; }
