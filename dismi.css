@@ -1,0 +1,89 @@
+}
+.dismifirm {
+  position: relative;
+  width: 350px;
+  height: 290px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 4px solid #99759fbf;
+  color: #fff;
+  overflow: hidden;
+  transition: box-shadow 0.4s, border-color 0.4s;
+}
+.dismifirm:hover {
+  border-color: #b89ac0;
+  box-shadow: 0 0 15px #99759f80, inset 0 0 10px #99759f80;
+}
+.dismifoto {
+  position: absolute;
+  inset: 15px;
+  background: url("https://64.media.tumblr.com/36dac8f40fec9a8376abd1ae937e79f6/db63bbfa29d652f6-62/s540x810/3980a992502cae17d4bbf778982f498c6dcbfe56.gif")
+    center/cover;
+  transition: opacity 0.5s;
+}
+.dismifoto.f2 {
+  background-image: url("https://64.media.tumblr.com/ccbd57c2b68590120eb1adf72888b2cf/aa26fc7a0480e883-44/s540x810/76dcfe0576612659e862fd677b91f0edbee9b44a.gif");
+  opacity: 0;
+  filter: grayscale(100%) brightness(0.5);
+}
+.dismifoto::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #c8aad7;
+  mix-blend-mode:multiply ;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+.dismifirm:hover .dismifoto::after {
+  transform: scaleX(1);
+}
+.dismifirm:hover .f2 {
+  opacity: 1;
+}
+.dismitexto {
+  position: relative;
+  top: 85px;
+  left: 210px;
+  width: 120px;
+  height: 100px;
+  text-align: center;
+  line-height: 10%;
+  font: 8px sans-serif;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  color: #d8d2c8;
+}
+.dismitexto .game-icon {
+  font-size: 35px;
+  color: #8d7391;
+  transition: opacity 0.3s, color 0.4s, filter 0.4s;
+}
+.dismitexto .i2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+.dismifirm:hover .i1 {
+  opacity: 0;
+}
+.dismifirm:hover .i2 {
+  opacity: 1;
+}
+.dismifirm:hover .game-icon {
+  color: #ddd9fe;
+  filter: drop-shadow(0 0 8px #d0cbebab);
+}
+.sha {
+  font: 24px "Pirata One";
+  color: #735877;
+  -webkit-text-stroke: 0.005em #5b534d;
+  text-shadow: 0 1px 2px #000, 0 0 5px #000;
+  letter-spacing: 2px;
+  text-transform: none;
+}
+
+.dismifirm:hover .parpadeo i{animation:blink .8s infinite;display:inline-block}.dismifirm:hover .parpadeo i:nth-child(1){animation-delay:.1s}.dismifirm:hover .parpadeo i:nth-child(2){animation-delay:.2s}.dismifirm:hover .parpadeo i:nth-child(3){animation-delay:.3s}.dismifirm:hover .parpadeo i:nth-child(4){animation-delay:.4s}.dismifirm:hover .parpadeo i:nth-child(5){animation-delay:.5s}.dismifirm:hover .parpadeo i:nth-child(6){animation-delay:.6s}.dismifirm:hover .parpadeo i:nth-child(7){animation-delay:.7s}.dismifirm:hover .parpadeo i:nth-child(8){animation-delay:.8s}@keyframes blink{0%,100%{opacity:1}50%{opacity:.1}}
