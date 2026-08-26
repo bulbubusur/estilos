@@ -1,0 +1,187 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+
+.sig-card {
+  width: 440px;
+  height: 200px;
+  padding: 12px;
+  position: relative;
+  box-sizing: border-box;
+  background: #121212;
+  font-family: "Metamorphous", serif;
+  border: 1px solid #404b47;
+  outline: 4px solid #1a1a1a;
+  outline-offset: -5px;
+}
+
+.sig-card .b1, .sig-card .b2, .sig-card .b3, .sig-card .b4 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  background: transparent;
+  transition: 1s ease-in-out 0.8s;
+  z-index: 10;
+}
+
+.sig-card .b1 { top: 0; left: 0; }
+.sig-card .b2 { top: 0; right: 0; }
+.sig-card .b3 { bottom: 0; right: 0; }
+.sig-card .b4 { bottom: 0; left: 0; }
+
+.sig-card:hover .b1, .sig-card:hover .b3 {
+  width: 100%;
+  background: #85bfb8;
+  transition: 1s ease-in-out 0s;
+}
+
+.sig-card:hover .b2, .sig-card:hover .b4 {
+  height: 100%;
+  background: #85bfb8;
+  transition: 1s ease-in-out 0s;
+}
+
+.sig-con {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  gap: 6px;
+  background: #000;
+}
+
+.sig-bg {
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.sig-bg1 {
+  background-image: url('https://64.media.tumblr.com/7ac795a6851358b07f27b09e17fe9b2e/d4d809350652cebe-6b/s540x810/ebad60fb4404d3ff455d55592e8f0431f5cb2516.gif');
+}
+
+.sig-bg2 {
+  background-image: url('https://64.media.tumblr.com/af2f1c883f521433ebc3ee167c21bd4b/d4d809350652cebe-c1/s540x810/f4a2744fc5ddfe8ece7c4f604c23875e39ec492e.gif');
+}
+
+.sig-over {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 5, 15, 0.75);
+  z-index: 2;
+  pointer-events: none;
+  transition: left 0.8s ease-in-out;
+}
+
+.sig-card:hover .sig-over {
+  left: 0;
+}
+
+.sig-f1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+  z-index: 3;
+}
+
+.sig-txt1, .sig-txt2 {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #e5e5e5;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+.sig-txt2 k {
+  color: #85bfb8;
+  font-weight: 700;
+}
+
+.sig-txt1 span, .sig-txt2 span {
+  display: inline-block;
+  transition: opacity 0.6s ease, transform 0.6s ease, filter 0.6s ease;
+}
+
+.sig-card:hover .sig-txt1 span,
+.sig-card:hover .sig-txt2 span {
+  opacity: 0;
+  filter: blur(8px);
+  transform: translateY(-12px);
+}
+
+.sig-card:hover .sig-txt1 span:nth-child(1) { transition-delay: 0.03s; }
+.sig-card:hover .sig-txt1 span:nth-child(2) { transition-delay: 0.06s; }
+.sig-card:hover .sig-txt1 span:nth-child(3) { transition-delay: 0.09s; }
+.sig-card:hover .sig-txt1 span:nth-child(4) { transition-delay: 0.12s; }
+.sig-card:hover .sig-txt1 span:nth-child(5) { transition-delay: 0.15s; }
+.sig-card:hover .sig-txt1 span:nth-child(6) { transition-delay: 0.18s; }
+
+.sig-card:hover .sig-txt2 span:nth-child(1) { transition-delay: 0.21s; }
+.sig-card:hover .sig-txt2 span:nth-child(2) { transition-delay: 0.24s; }
+.sig-card:hover .sig-txt2 span:nth-child(3) { transition-delay: 0.27s; }
+.sig-card:hover .sig-txt2 span:nth-child(4) { transition-delay: 0.30s; }
+
+.sig-f2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.sig-sub {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -40%) scale(0.85);
+  width: 40%;
+  text-align: center;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #dcdcdc;
+  background: rgba(20, 15, 25, 0.85);
+  padding: 8px 4px;
+  border-radius: 2px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  filter: blur(6px);
+  transition: all 0.8s ease 0.4s;
+}
+
+.sig-sub k {
+  color: #85bfb8;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sig-ico {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  transform: translate(50%, -30%) rotate(-45deg);
+  font-size: 28px;
+  color: #85bfb8;
+  opacity: 0;
+  filter: drop-shadow(0 0 8px rgba(197, 160, 89, 0.6));
+  transition: all 0.9s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.6s;
+}
+
+.sig-card:hover .sig-sub {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.sig-card:hover .sig-ico {
+  opacity: 1;
+  transform: translate(50%, -50%) rotate(0deg);
+}
